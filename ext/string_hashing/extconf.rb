@@ -1,3 +1,4 @@
+# -*- encoding : utf-8 -*-
 require 'mkmf'
 
 extension_name = 'string_hashing'

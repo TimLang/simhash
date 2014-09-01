@@ -25,7 +25,10 @@ spec = Gem::Specification.new do |s|
   if s.respond_to? :specification_version then
     current_version = Gem::Specification::CURRENT_SPECIFICATION_VERSION
     s.specification_version = 3
-
+    s.add_development_dependency "rmmseg-cpp-huacnlee", '~> 0.2.9'
+    s.add_development_dependency "debugger"
+    s.add_development_dependency "tyccl", "~> 0.0.2"
+    s.add_development_dependency 'algorithms'
     if Gem::Version.new(Gem::RubyGemsVersion) >= Gem::Version.new('1.2.0') then
       s.add_runtime_dependency(%q<unicode>, [">= 0.3.1"])
       s.add_runtime_dependency(%q<activesupport>)      

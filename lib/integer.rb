@@ -1,3 +1,4 @@
+# -*- encoding : utf-8 -*-
 class Integer
   # Hamming distance – number of different bits in same positions
   # H(1001, 1110) = 3 

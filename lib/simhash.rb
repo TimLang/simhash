@@ -1,4 +1,4 @@
-# encoding: utf-8
+# -*- encoding : utf-8 -*-
 
 require 'active_support/core_ext/string/multibyte'
 require 'unicode'
@@ -48,7 +48,7 @@ module Simhash
     stop_sentenses = options[:stop_sentenses]
     tokens.each do |token|
       # cutting punctuation (\302\240 is unbreakable space)
-      token = token.gsub(PUNCTUATION_REGEXP, ' ') if !options[:preserve_punctuation]
+      token = token.force_encoding('UTF-8').gsub(PUNCTUATION_REGEXP, ' ') if !options[:preserve_punctuation]
       
       token = Unicode::downcase(token.strip)
       

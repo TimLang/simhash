@@ -31,6 +31,7 @@ class String
     loop do
       tok = algor.next_token
       word = (Tyccl.get_similar(tok.text.force_encoding('utf-8')).first.first rescue nil)
+      word = tok.text if word.nil? && !tok.nil?
       break if word.nil?
       result << word
     end

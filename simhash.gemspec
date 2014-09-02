@@ -8,11 +8,11 @@ exclude_files = ["**/*.o", "**/*.bundle", "**/Makefile", "*.bundle" ].map do |gl
 end.flatten
 
 spec = Gem::Specification.new do |s|
-  s.name              = "simhash"
-  s.version           = "0.2.5"
+  s.name              = "simhash_tim_modified"
+  s.version           = "0.2.6"
   s.author            = "Alex Gusev"
   s.email             = "alex.gusev@bookmate.ru"
-  s.homepage          = "http://github.com/bookmate/simhash"
+  s.homepage          = "http://github.com/timlang/simhash"
   s.rubyforge_project = "simhash"
   s.description       = "Implementation of Charikar simhashes in Ruby"
   s.platform          = Gem::Platform::RUBY

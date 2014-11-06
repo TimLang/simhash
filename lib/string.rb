@@ -1,7 +1,7 @@
 # -*- encoding : utf-8 -*-
 
 require 'rmmseg'
-require 'tyccl'
+#require 'tyccl'
 require 'debugger'
 
 class String
@@ -30,10 +30,10 @@ class String
     result = []
     loop do
       tok = algor.next_token
-      word = (Tyccl.get_similar(tok.text.force_encoding('utf-8')).first.first rescue nil)
-      word = tok.text if word.nil? && !tok.nil?
-      break if word.nil?
-      result << word
+      #word = (Tyccl.get_similar(tok.text.force_encoding('utf-8')).first.first rescue nil)
+      #word = tok.text if word.nil? && !tok.nil?
+      break if tok.nil?
+      result << tok.text
     end
     result
    end

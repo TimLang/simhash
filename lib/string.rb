@@ -2,7 +2,7 @@
 
 require 'rmmseg'
 #require 'tyccl'
-require 'debugger'
+#require 'debugger'
 
 class String
   include RMMSeg

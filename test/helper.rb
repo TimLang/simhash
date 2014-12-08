@@ -23,7 +23,7 @@ end
 
 hash1 = a1.simhash(:hashbits => 64)
 hash2 = a2.simhash(:hashbits => 64)
-debugger
+
 puts (hash1 ^ hash2).to_s(2).count("1")
 puts hash1.to_s(2)
 puts hash2.to_s(2)

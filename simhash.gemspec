@@ -9,7 +9,7 @@ end.flatten
 
 spec = Gem::Specification.new do |s|
   s.name              = "simhash_tim_modified"
-  s.version           = "0.2.6"
+  s.version           = "0.2.8"
   s.author            = "Alex Gusev"
   s.email             = "alex.gusev@bookmate.ru"
   s.homepage          = "http://github.com/timlang/simhash"
@@ -26,7 +26,7 @@ spec = Gem::Specification.new do |s|
     current_version = Gem::Specification::CURRENT_SPECIFICATION_VERSION
     s.specification_version = 3
     s.add_development_dependency "rmmseg-cpp-huacnlee", '0.2.9'
-    s.add_development_dependency "debugger"
+    #s.add_development_dependency "debugger"
     s.add_development_dependency "tyccl", "0.0.2"
     s.add_development_dependency 'algorithms'
     if Gem::Version.new(Gem::RubyGemsVersion) >= Gem::Version.new('1.2.0') then
